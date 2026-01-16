@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# This is how execute it
+# bash <(curl -s https://raw.githubusercontent.com/tamasmeidlinger/mac-setup-scripts/main/print-hello.sh)
 set -e
 
 echo "Downloading Homebrew"
