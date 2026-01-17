@@ -18,6 +18,14 @@ mkdir -p "$HOME/.config"
 echo "Copying sketchybar configs"
 cp -r "$DOTFILES_DIR/sketchybar" "$HOME/.config"
 
+chmod +x ~/.config/sketchybar/plugins/*
+chmod +x ~/.config/sketchybar/items/*
+
+# curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v1.0.16/sketchybar-app-font.ttf -o $HOME/Library/Fonts/sketchybar-app-font.ttf
+brew install --cask font-sketchybar-app-font
+
+brew services start sketchybar
+
 echo "Copying aerospace config"
 cp "$DOTFILES_DIR/aerospace/.aerospace.toml" "$HOME"
 
@@ -30,6 +38,12 @@ cp -r "$DOTFILES_DIR/phpactor" "$HOME/.config"
 mkdir -p "$HOME/.config/karabiner/assets/complex_modifications"
 
 echo "Copying Karabiner Complex Modifications"
-cp "$DOTFILES_DIR/karabiner-elements/complex_modifications/"* "$HOME/.config/karabiner/assets/complex_modifications"
+cp "$DOTFILES_DIR/karabiner-elements/complex_modifications/my-modifications.json" "$HOME/.config/karabiner/assets/complex_modifications"
+
+echo "Making MacOS Dock faster"
+
+defaults write com.apple.dock autohide-delay -float 0
+defaults write com.apple.dock autohide-time-modifier -int 0
+killall Dock
 
 echo "Done!"

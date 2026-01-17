@@ -7,6 +7,10 @@ set -e
 echo "Downloading Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+echo "Adding Homebrew to PATH"
+echo >>/Users/tamas/.zprofile
+echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >>/Users/tamas/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv zsh)"
 brew --version
 
 echo "Installing apps and packages"
@@ -17,14 +21,17 @@ brew install --cask \
   mac-mouse-fix zoom vb-cable shottr \
   malwarebytes aldente \
   wezterm libreoffice \
-  insomnia joplin aerospace \
+  insomnia joplin nikitabobko/tap/aerospace \
   font-caskaydia-mono-nerd-font
 
 brew install \
   python git uv pnpm node \
   tldr eza bat fd ripgrep fzf \
   lazygit neovim tree-sitter \
-  postgresql sketchybar php@8.4 composer
+  postgresql php@8.4 composer
+
+brew tap FelixKratz/formulae
+brew install sketchybar
 
 echo "Done"
 echo "Now set git up"
