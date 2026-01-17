@@ -33,5 +33,8 @@ brew install \
 brew tap FelixKratz/formulae
 brew install sketchybar
 
+echo "Installing laravel installer"
+composer global require laravel/installer
+
 echo "Done"
-echo "Now set git up"
+echo "Open Lulu and Karabiner before continuing"
