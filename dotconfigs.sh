@@ -40,6 +40,10 @@ mkdir -p "$HOME/.config/karabiner/assets/complex_modifications"
 echo "Copying Karabiner Complex Modifications"
 cp "$DOTFILES_DIR/karabiner-elements/complex_modifications/my-modifications.json" "$HOME/.config/karabiner/assets/complex_modifications"
 
+echo "Copying Wezterm config"
+
+cp "$DOTFILES_DIR/wezterm/.wezterm.lua" "$HOME"
+
 echo "Making MacOS Dock faster"
 
 defaults write com.apple.dock autohide-delay -float 0
