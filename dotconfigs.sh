@@ -16,7 +16,7 @@ fi
 mkdir -p "$HOME/.config"
 
 echo "Copying sketchybar configs"
-cp -r "$DOTFILES_DIR/sketchybar" "$HOME/.config"
+cp -r "$DOTFILES_DIR/sketchybar/*" "$HOME/.config/sketchybar/"
 
 chmod +x ~/.config/sketchybar/plugins/*
 chmod +x ~/.config/sketchybar/items/*

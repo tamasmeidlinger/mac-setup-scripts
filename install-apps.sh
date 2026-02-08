@@ -8,8 +8,8 @@ echo "Downloading Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 echo "Adding Homebrew to PATH"
-echo >>/Users/tamas/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >>/Users/tamas/.zprofile
+echo >>"$HOME/.zprofile"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >>"$HOME/.zprofile"
 eval "$(/opt/homebrew/bin/brew shellenv zsh)"
 brew --version
 
