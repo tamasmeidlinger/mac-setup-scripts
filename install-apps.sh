@@ -19,7 +19,7 @@ brew install --cask \
   obs visual-studio-code \
   karabiner-elements betterdisplay \
   mac-mouse-fix zoom vb-cable shottr \
-  malwarebytes aldente \
+  aldente \
   wezterm libreoffice \
   insomnia joplin nikitabobko/tap/aerospace \
   font-caskaydia-mono-nerd-font
