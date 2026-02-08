@@ -27,7 +27,7 @@ brew install \
   python git uv pnpm node \
   tldr eza bat fd ripgrep fzf \
   lazygit neovim tree-sitter \
-  postgresql php@8.4 composer
+  php@8.4 composer
 
 brew tap FelixKratz/formulae
 brew install sketchybar
