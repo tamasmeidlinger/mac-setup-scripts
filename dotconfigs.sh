@@ -33,9 +33,6 @@ cp "$DOTFILES_DIR/aerospace/.aerospace.toml" "$HOME"
 echo "Copying nvim configs"
 cp -r "$DOTFILES_DIR/nvim" "$HOME/.config"
 
-echo "Copying phpactor configs"
-cp -r "$DOTFILES_DIR/phpactor" "$HOME/.config"
-
 mkdir -p "$HOME/.config/karabiner/assets/complex_modifications"
 
 echo "Copying Karabiner Complex Modifications"

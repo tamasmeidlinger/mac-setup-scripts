@@ -15,7 +15,7 @@ brew --version
 
 echo "Installing apps and packages"
 brew install --cask \
-  lulu zen vivaldi \
+  lulu zen \
   obs visual-studio-code \
   karabiner-elements betterdisplay \
   mac-mouse-fix zoom vb-cable shottr \
@@ -26,14 +26,10 @@ brew install --cask \
 brew install \
   python git uv pnpm node \
   tldr eza bat fd ripgrep fzf \
-  lazygit neovim tree-sitter \
-  php@8.4 composer
+  lazygit neovim tree-sitter
 
 brew tap FelixKratz/formulae
 brew install sketchybar
-
-echo "Installing laravel installer"
-composer global require laravel/installer
 
 echo "Done"
 echo "Open Lulu and Karabiner before continuing"
