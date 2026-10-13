@@ -4,6 +4,7 @@
 # bash <(curl -s https://raw.githubusercontent.com/tamasmeidlinger/mac-setup-scripts/main/print-hello.sh)
 set -e
 
+# Homebrew setup
 echo "Downloading Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -13,6 +14,7 @@ echo 'eval "$(/opt/homebrew/bin/brew shellenv zsh)"' >>"$HOME/.zprofile"
 eval "$(/opt/homebrew/bin/brew shellenv zsh)"
 brew --version
 
+# Install apps and packages
 echo "Installing apps and packages"
 brew install --cask \
   lulu zen \

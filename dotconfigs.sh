@@ -15,6 +15,7 @@ fi
 
 mkdir -p "$HOME/.config"
 
+# Sketchybar setup
 mkdir -p "$HOME/.config/sketchybar"
 echo "Copying sketchybar configs"
 cp -r "$DOTFILES_DIR/sketchybar/"* "$HOME/.config/sketchybar/"
@@ -27,24 +28,30 @@ brew install --cask font-sketchybar-app-font
 
 brew services start sketchybar
 
+# Aerospace setup
 echo "Copying aerospace config"
 cp "$DOTFILES_DIR/aerospace/.aerospace.toml" "$HOME"
 
+# Neovim setup
 echo "Copying nvim configs"
 cp -r "$DOTFILES_DIR/nvim" "$HOME/.config"
 
+# Karabiner setup
 mkdir -p "$HOME/.config/karabiner/assets/complex_modifications"
 
 echo "Copying Karabiner Complex Modifications"
 cp "$DOTFILES_DIR/karabiner-elements/complex_modifications/my-modifications.json" "$HOME/.config/karabiner/assets/complex_modifications"
 
+# Wezterm setup
 echo "Copying Wezterm config"
 cp "$DOTFILES_DIR/wezterm/.wezterm.lua" "$HOME"
 
+# VSCode setup
 echo "Copying VSCode CSS"
 mkdir -p "$HOME/.config/vscode-custom"
 cp "$DOTFILES_DIR/vscode-settings/vscode-styles.css" "$HOME/.config/vscode-custom/"
 
+# Make MacOS Dock faster
 echo "Making MacOS Dock faster"
 
 defaults write com.apple.dock autohide-delay -float 0
