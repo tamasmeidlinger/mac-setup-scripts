@@ -29,7 +29,8 @@ brew install \
   bat btop eza fd ripgrep fzf yazi \
   zoxide git lazygit neovim \
   python uv node pnpm \
-  leaf-markdown-viewer typescript sqlite
+  leaf-markdown-viewer typescript sqlite \
+  bookokrat
 
 brew tap FelixKratz/formulae
 brew install sketchybar
