@@ -51,6 +51,10 @@ echo "Copying VSCode CSS"
 mkdir -p "$HOME/.config/vscode-custom"
 cp "$DOTFILES_DIR/vscode-settings/vscode-styles.css" "$HOME/.config/vscode-custom/"
 
+# zshrc setup
+echo "Setting up .zshrc"
+cat "$DOTFILES_DIR/zsh/.zshrc" >"$HOME/.zshrc"
+
 # Make MacOS Dock faster
 echo "Making MacOS Dock faster"
 
@@ -58,4 +62,10 @@ defaults write com.apple.dock autohide-delay -float 0
 defaults write com.apple.dock autohide-time-modifier -int 0
 killall Dock
 
-echo "Done!"
+echo "IMPORTANT!"
+echo "tsx is not yet installed."
+echo "If you want to install it run:"
+echo "pnpm add -g tsx"
+echo "pnpm may not have a global executable directory configured yet"
+echo "in that case run:"
+echo "pnpm setup"
