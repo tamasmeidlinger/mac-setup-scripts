@@ -17,18 +17,19 @@ brew --version
 # Install apps and packages
 echo "Installing apps and packages"
 brew install --cask \
-  lulu zen \
-  obs visual-studio-code \
-  karabiner-elements betterdisplay \
-  mac-mouse-fix zoom vb-cable shottr \
-  aldente wezterm \
-  insomnia joplin nikitabobko/tap/aerospace \
+  lulu karabiner-elements nikitabobko/tap/aerospace \
+  aldente betterdisplay mac-mouse-fix \
+  shottr obs zoom vb-cable \
+  wezterm visual-studio-code docker-desktop \
+  dbeaver-community quarto typst \
+  zen firefox joplin discord \
   font-caskaydia-mono-nerd-font
 
 brew install \
-  python git uv pnpm node \
-  tldr eza bat fd ripgrep fzf \
-  lazygit neovim tree-sitter
+  bat btop eza fd ripgrep fzf yazi \
+  zoxide git lazygit neovim \
+  python uv node pnpm \
+  leaf-markdown-viewer typescript sqlite
 
 brew tap FelixKratz/formulae
 brew install sketchybar
