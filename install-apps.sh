@@ -30,7 +30,7 @@ brew install \
   zoxide git lazygit neovim \
   python uv node pnpm \
   leaf-markdown-viewer typescript sqlite \
-  bookokrat
+  bookokrat jq
 
 brew tap FelixKratz/formulae
 brew install sketchybar
