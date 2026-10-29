@@ -1,4 +1,4 @@
-# macOS Package Reference
+# List of Apps Installed
 
 ## GUI Applications & Desktop Utilities
 
@@ -52,4 +52,4 @@
 |  18 | `tsx` (via pnpm)       | Executes TypeScript and TSX files directly in Node.js.                             |
 |  19 | `sqlite`               | Lightweight relational database engine with the `sqlite3` CLI.                     |
 |  20 | `bookokrat`            | TUI pdf viewer                                                                     |
-|  21 | `jq`                   | Lightweight and flexible command-line JSON processor viewer                        |
+|  21 | `jq`                   | Lightweight and flexible command-line JSON processor.                              |
