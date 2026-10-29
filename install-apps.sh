@@ -35,5 +35,22 @@ brew install \
 brew tap FelixKratz/formulae
 brew install sketchybar
 
+# TODO-APP
+mkdir -p "$HOME/tools"
+
+git clone https://github.com/tamasmeidlinger/to-do-tui.git "$HOME/tools/to-do/"
+
+uv sync --project "$HOME/tools/to-do"
+
+cp "$HOME/tools/to-do/data/backup-to-do.json" "$HOME/tools/to-do/data/to-do.json"
+
+cp "$HOME/tools/to-do/data/backup-weekly-tasks.json" "$HOME/tools/to-do/data/weekly-tasks.json"
+
+cp "$HOME/tools/to-do/data/backup-todo-on-day-x.json" "$HOME/tools/to-do/data/todo-on-day-x.json"
+
+# THEME-SWITCHER
+
+git clone https://github.com/tamasmeidlinger/theme-switcher-macos.git "$HOME/tools/theme-switcher"
+
 echo "Done"
 echo "Open Lulu and Karabiner before continuing"

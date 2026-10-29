@@ -4,6 +4,7 @@
 set -e
 
 DOTFILES_DIR="$HOME/dotfiles"
+VSCODE_SETTINGS="$HOME/Library/Application Support/Code/User/"
 
 echo "Cloning dotfiles"
 
@@ -50,6 +51,9 @@ cp "$DOTFILES_DIR/wezterm/.wezterm.lua" "$HOME"
 echo "Copying VSCode CSS"
 mkdir -p "$HOME/.config/vscode-custom"
 cp "$DOTFILES_DIR/vscode-settings/vscode-styles.css" "$HOME/.config/vscode-custom/"
+
+echo "Copying VSCode settings.json"
+cp "$DOTFILES_DIR/vscode-settings/vscode-settings.json" "$VSCODE_SETTINGS/settings.json"
 
 # zshrc setup
 echo "Setting up .zshrc"
