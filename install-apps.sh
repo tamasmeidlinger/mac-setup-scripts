@@ -23,7 +23,7 @@ brew install --cask \
   wezterm visual-studio-code docker-desktop \
   dbeaver-community quarto typst \
   zen firefox joplin discord \
-  font-caskaydia-mono-nerd-font
+  font-caskaydia-mono-nerd-font look
 
 brew install \
   bat btop eza fd ripgrep fzf yazi \
